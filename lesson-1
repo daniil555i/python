@@ -109,18 +109,18 @@ else:
 
 print('Game1')
 gamer = {'name': input('Как вас зовут?\n'),
-         'age': int(input('Сколько тебе лет?\n')),
-         'sex': '',
-         'pet_name': '',
+         'age': int(input('Сколько вам лет?\n')),
+         'sex': input('Ваш пол?\n'),
+         'pet_name': input('Имя вашего питомца?\n'),
          }
-answer_5 = bool(input('Любите ли вы играть? Да/Нет '))
+answer_5 = bool(input('Любите ли вы играть?\n Да/Нет '))
 if gamer['age'] < 18:
         print('Вам нельзя играть.'),
 elif gamer['age'] > 90:
         print('Для вас это может быть утомительно')
-        answer = input('Вы точно хотите играть? Y/N ')
+        answer = input('Вы точно хотите играть?\n Y/N ')
         if answer == 'Y':
-            answer_1 = input('Вы точно хотите играть? Y/N ')
+            answer_1 = input('Вы точно хотите играть?\n Y/N ')
             if answer == 'Y':
                 print('Хорошо, тогда начнем игру')
                 if answer_1 == 'N':

@@ -10,7 +10,7 @@ var_1 = int(input(''))
 
 while var_1 > 0:
     print(var_1 // 10)
-    var_1 = (var_1 % 10)
+    var_1 = var_1 % 10
     print(var_1 % 10)
     break
 

@@ -103,3 +103,35 @@ else:
     x1 = (-b + math.sqrt(b**2 - 4 * a * c)) / (2 * a)
     x2 = (-b - math.sqrt(b**2 - 4 * a * c)) / (2 * a)
     print(x1, x2)    
+
+
+#Игра
+
+print('Game1')
+gamer = {'name': input('Как вас зовут?\n'),
+         'age': int(input('Сколько тебе лет?\n')),
+         'sex': '',
+         'pet_name': '',
+         }
+answer_5 = bool(input('Любите ли вы играть? Да/Нет '))
+if gamer['age'] < 18:
+        print('Вам нельзя играть.'),
+elif gamer['age'] > 90:
+        print('Для вас это может быть утомительно')
+        answer = input('Вы точно хотите играть? Y/N ')
+        if answer == 'Y':
+            answer_1 = input('Вы точно хотите играть? Y/N ')
+            if answer == 'Y':
+                print('Хорошо, тогда начнем игру')
+                if answer_1 == 'N':
+                    print(gamer['name'] ,'до свидания!')
+if gamer['age'] in range(18, 90):
+    print(gamer['name'], ( 'привет!' ))
+
+print('Я могу назвать буквы алфавита, которых нет в твоем имени. И произнести их.')
+
+name1 = gamer['name'].upper()
+characters = 'абвгдеёжзийклмнопрстуфхцчшщъыьээюя'
+for char in characters:
+    if char not in name1:
+        print(char)
